@@ -1,0 +1,72 @@
+CREATE TABLE FOOD(
+ID INT AUTO_INCREMENT,
+NAME VARCHAR(100),
+PRICE DOUBLE,
+STOCK INT,
+TYPE VARCHAR(25)
+);
+
+CREATE TABLE CART(
+ID INT AUTO_INCREMENT,
+CUS_NAME VARCHAR(50),
+CUS_NUMBER VARCHAR(10),
+RES_ID INT,
+PAID_YN VARCHAR(1),
+PREPARED_YN VARCHAR(1),
+DELIVERD_YN VARCHAR(1),
+ORD_NUM VARCHAR(10),
+STATUS VARCHAR(1)
+);
+
+CREATE TABLE ITEM(
+ID INT AUTO_INCREMENT,
+NAME VARCHAR(100),
+QUANTITY DOUBLE,
+PRICE DOUBLE
+);
+
+INSERT INTO FOOD VALUES(1,'Mozzarella sticks',200,10,'Appetizers');
+INSERT INTO FOOD VALUES(2,'Cheddar Biscuits',150,10,'Appetizers');
+INSERT INTO FOOD VALUES(3,'Onion rings',120,10,'Appetizers');
+INSERT INTO FOOD VALUES(4,'French fries',100,10,'Appetizers');
+INSERT INTO FOOD VALUES(5,'Baked potato',150,10,'Appetizers');
+INSERT INTO FOOD VALUES(6,'Pigs in a blanket',250,10,'Appetizers');
+
+INSERT INTO FOOD VALUES(7,'Chicken pot pie',250,10,'Comfort food');
+INSERT INTO FOOD VALUES(8,'Fried chicken',350,10,'Comfort food');
+INSERT INTO FOOD VALUES(9,'Chicken soup',120,10,'Comfort food');
+INSERT INTO FOOD VALUES(10,'Meatloaf',180,10,'Comfort food');
+INSERT INTO FOOD VALUES(11,'Lasagna',100,10,'Comfort food');
+INSERT INTO FOOD VALUES(12,'Chicken burger',140,10,'Comfort food');
+
+INSERT INTO FOOD VALUES(13,'Tomato soup',140,10,'Kid menu');
+INSERT INTO FOOD VALUES(14,'Flatbread pizza',200,10,'Kid menu');
+INSERT INTO FOOD VALUES(15,'Grilled cheese',150,10,'Kid menu');
+INSERT INTO FOOD VALUES(16,'Mini burgers',80,10,'Kid menu');
+INSERT INTO FOOD VALUES(17,'Mini pizzas',120,10,'Kid menu');
+INSERT INTO FOOD VALUES(18,'Bread pizza',140,10,'Kid menu');
+
+INSERT INTO FOOD VALUES(19,'Apple pie',80,10,'Desserts');
+INSERT INTO FOOD VALUES(20,'Banana split',120,10,'Desserts');
+INSERT INTO FOOD VALUES(21,'Molten lava cakes',80,10,'Desserts');
+INSERT INTO FOOD VALUES(22,'Cinnamon rolls',100,10,'Desserts');
+INSERT INTO FOOD VALUES(23,'Baklava',120,10,'Desserts');
+INSERT INTO FOOD VALUES(24,'Cannoli',100,10,'Desserts');
+
+INSERT INTO FOOD VALUES(25,'Naan',10,10,'Breads');
+INSERT INTO FOOD VALUES(26,'Roti',5,10,'Breads');
+INSERT INTO FOOD VALUES(27,'Aloo Paratha',50,10,'Breads');
+INSERT INTO FOOD VALUES(28,'Poori',30,10,'Breads');
+INSERT INTO FOOD VALUES(29,'Gobi Paratha',60,10,'Breads');
+INSERT INTO FOOD VALUES(30,'Vegetable Paratha',65,10,'Breads');
+
+INSERT INTO FOOD VALUES(31,'Tikka Masala',150,10,'Main');
+INSERT INTO FOOD VALUES(32,'Chana Masala',140,10,'Main');
+INSERT INTO FOOD VALUES(33,'Korma',220,10,'Main');
+INSERT INTO FOOD VALUES(34,'Rogan josh',200,10,'Main');
+INSERT INTO FOOD VALUES(35,'Vindaloo',150,10,'Main');
+INSERT INTO FOOD VALUES(36,'Dal Makhni',80,10,'Main');
+INSERT INTO FOOD VALUES(37,'Tadka',100,10,'Main');
+INSERT INTO FOOD VALUES(38,'Chicken Biryani',250,10,'Main');
+INSERT INTO FOOD VALUES(39,'Hyderabadi Dum Biryani',300,10,'Main');
+INSERT INTO FOOD VALUES(40,'Lamb Biryani',350,10,'Main');
